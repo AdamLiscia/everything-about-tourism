@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Travel Guide - Explore America State by State</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/components.js"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <div id="navigation"></div>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-900 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">Explore America</h1>
+            <p class="text-xl mb-8">Your state-by-state guide to the best of the USA</p>
+            <a href="/states/" class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg">
+                Start Exploring
+            </a>
+        </div>
+    </header>
+
+    <!-- Featured States -->
+    <section class="container mx-auto py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Featured States</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Featured State Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/states/california.jpg" alt="California" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">California</h3>
+                    <p class="text-gray-600 mb-4">From stunning coastlines to majestic mountains, explore the Golden State.</p>
+                    <a href="/states/california.html" class="text-blue-500 hover:text-blue-600">Learn More →</a>
+                </div>
+            </div>
+            <!-- Add more featured state cards -->
+        </div>
+    </section>
+
+    <!-- Latest Blog Posts -->
+    <section class="bg-gray-200 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Latest Travel Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Blog Post Preview -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Road Trip: Coast to Coast</h3>
+                        <p class="text-gray-600 mb-4">Join us on an epic journey across America...</p>
+                        <a href="/blog/posts/road-trip-coast-to-coast.html" class="text-blue-500 hover:text-blue-600">Read More →</a>
+                    </div>
+                </div>
+                <!-- Add more blog post previews -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Move scripts to end of body -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/components.js"></script>
+</body>
+</html> 

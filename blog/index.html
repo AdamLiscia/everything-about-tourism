@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - US Travel Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/components.js"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <div id="navigation"></div>
+
+    <!-- Blog Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="space-y-12">
+            <!-- Featured Posts -->
+            <section>
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Featured Stories</h2>
+                <div class="grid gap-8">
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="relative">
+                            <img src="../images/blog/featured1.jpg" alt="Featured Post 1" class="w-full h-96 object-cover">
+                            <span class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Road Trips</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2"><a href="posts/post1.html" class="hover:text-blue-600">The Ultimate Pacific Coast Highway Road Trip Guide</a></h3>
+                            <p class="text-sm text-gray-600 mb-4 flex items-center gap-4">
+                                <span>By Sarah Johnson</span>
+                                <span>March 15, 2024</span>
+                                <span>12 min read</span>
+                            </p>
+                            <p class="text-gray-600 mb-4">Discover the most scenic stops, hidden gems, and must-visit restaurants along California's iconic coastal route...</p>
+                            <a href="posts/pacific-coast-highway.html" class="text-blue-600 hover:text-blue-800 font-medium">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Blog Categories -->
+            <section>
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Browse by Category</h2>
+                <div class="flex flex-wrap gap-3">
+                    <button class="px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700">All</button>
+                    <button class="px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300">Road Trips</button>
+                    <button class="px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300">Food & Dining</button>
+                    <button class="px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300">Hidden Gems</button>
+                    <button class="px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300">Travel Tips</button>
+                    <button class="px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300">State Guides</button>
+                </div>
+            </section>
+
+            <!-- Latest Posts -->
+            <section>
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Latest Posts</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="relative">
+                            <img src="../images/blog/post1.jpg" alt="Blog Post 1" class="w-full h-48 object-cover">
+                            <span class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Food & Dining</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2"><a href="posts/post2.html" class="hover:text-blue-600">Top 10 BBQ Joints in Texas You Can't Miss</a></h3>
+                            <p class="text-sm text-gray-600 mb-4">
+                                <span>By Mike Wilson</span> · 
+                                <span>March 12, 2024</span>
+                            </p>
+                            <p class="text-gray-600 mb-4">From Austin to Dallas, these legendary BBQ spots serve up the most mouthwatering brisket...</p>
+                            <a href="posts/post2.html" class="text-blue-600 hover:text-blue-800 font-medium">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <div class="flex items-center justify-between mt-8">
+                    <button class="px-4 py-2 text-gray-400 cursor-not-allowed" disabled>← Previous</button>
+                    <div class="flex gap-2">
+                        <span class="px-4 py-2 bg-blue-600 text-white rounded">1</span>
+                        <span class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded cursor-pointer">2</span>
+                        <span class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded cursor-pointer">3</span>
+                        <span class="px-4 py-2 text-gray-700">...</span>
+                        <span class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded cursor-pointer">12</span>
+                    </div>
+                    <button class="px-4 py-2 text-gray-700 hover:text-blue-600">Next →</button>
+                </div>
+            </section>
+
+            <!-- Newsletter Signup -->
+            <section class="bg-blue-50 rounded-xl p-8">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Stay Updated</h2>
+                    <p class="text-gray-600 mb-6">Subscribe to our newsletter for the latest travel tips and stories</p>
+                    <form class="flex gap-4 max-w-md mx-auto">
+                        <input type="email" placeholder="Enter your email address" required class="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Popular Tags -->
+            <section>
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Popular Tags</h2>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200">National Parks</a>
+                    <a href="#" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200">City Guides</a>
+                    <a href="#" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200">Food Tours</a>
+                    <a href="#" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200">Adventure</a>
+                    <a href="#" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200">Budget Travel</a>
+                    <a href="#" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200">Family Trips</a>
+                    <a href="#" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200">Photography</a>
+                    <a href="#" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200">Local Culture</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+</body>
+</html> 

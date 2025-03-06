@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Travel Guide - US Travel Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/components.js"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <div id="navigation"></div>
+
+    <!-- State Content -->
+    <main class="state-content max-w-7xl mx-auto px-4 py-8">
+                <!-- Breadcrumb Navigation -->
+                <nav aria-label="Breadcrumb" class="mb-8">
+                    <ol class="flex items-center space-x-2 text-gray-600">
+                        <li>
+                            <a href="../states/index.html" class="hover:text-blue-600 flex items-center">
+                                <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                                </svg>
+                                States
+                            </a>
+                        </li>
+                        <li>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </li>
+                        <li>
+                            <a href="../states/new-york.html" class="hover:text-blue-600">New York</a>
+                        </li>
+                        <li>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </li>
+                        <li class="font-semibold text-gray-800">New York City</li>
+                    </ol>
+                </nav>
+        <div class="container">
+            <!-- Top Attractions -->
+            <section class="attractions mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Must-Visit Attractions</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="attraction-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="../images/states/new-york/statue-liberty.jpg" alt="Statue of Liberty" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Statue of Liberty</h3>
+                            <p class="text-gray-600 mb-4">Iconic symbol of freedom and democracy, located on Liberty Island in New York Harbor.</p>
+                            <a href="../attractions/statue-of-liberty.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="../images/states/new-york/central-park.jpg" alt="Central Park" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Central Park</h3>
+                            <p class="text-gray-600 mb-4">843-acre urban oasis featuring lakes, gardens, and numerous recreational facilities.</p>
+                            <a href="../attractions/central-park.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="../images/states/new-york/times-square.jpg" alt="Times Square" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Times Square</h3>
+                            <p class="text-gray-600 mb-4">Vibrant entertainment hub known for its bright lights, Broadway theaters, and New Year's Eve ball drop.</p>
+                            <a href="../attractions/times-square.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Local Cuisine -->
+            <section class="local-cuisine mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Local Cuisine</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="restaurant-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="../images/states/new-york/katz-deli.jpg" alt="Katz's Delicatessen" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Katz's Delicatessen</h3>
+                            <p class="text-gray-600 mb-4">Jewish Deli • $$</p>
+                            <a href="../restaurants/katzs-delicatessen.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="../images/states/new-york/grimaldis.jpg" alt="Grimaldi's" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Grimaldi's</h3>
+                            <p class="text-gray-600 mb-4">New York Pizza • $$</p>
+                            <a href="../restaurants/grimaldis.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="../images/states/new-york/sunday-in-brooklyn.jpg" alt="Sunday in Brooklyn" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Sunday in Brooklyn</h3>
+                            <p class="text-gray-600 mb-4">New American • $$$</p>
+                            <a href="../restaurants/sunday-in-brooklyn.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Travel Tips -->
+            <section class="travel-tips mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Travel Tips</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="tip bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Getting Around</h3>
+                        <p class="text-gray-600">The NYC subway system runs 24/7 and is the most efficient way to travel. Consider getting a MetroCard for unlimited rides. For intercity travel, Amtrak serves major cities across the state.</p>
+                    </div>
+
+                    <div class="tip bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Where to Stay</h3>
+                        <p class="text-gray-600">Manhattan offers luxury hotels and boutique accommodations, while Brooklyn and Queens provide more affordable options. Consider staying near subway stations for convenient access to attractions.</p>
+                    </div>
+
+                    <div class="tip bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Local Events</h3>
+                        <p class="text-gray-600">Don't miss the NYC Marathon (November), New Year's Eve in Times Square, NYC Restaurant Week (January/July), and the Tribeca Film Festival (Spring).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Map -->
+            <section class="state-map mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Explore New York</h2>
+                <div id="map" class="map-container h-96 bg-gray-200 rounded-lg shadow-lg">
+                    <!-- Map will be inserted here via JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="../js/components.js"></script>
+</body>
+</html> 

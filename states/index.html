@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>States Directory - Restaurant Reviews</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/components.js"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navigation Bar -->
+    <div id="navigation"></div>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center mb-12 text-gray-800">Browse Restaurants by State</h1>
+        
+        <div class="states-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div class="state-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <a href="maine.html" class="block p-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Maine</h2>
+                    <p class="text-gray-600">Explore restaurants in Maine</p>
+                </a>
+            </div>
+
+            <div class="state-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <a href="/states/new-york/new-york.html" class="block p-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">New York</h2>
+                    <p class="text-gray-600">Explore restaurants in New York</p>
+                </a>
+            </div>
+
+            <!-- Add more state cards as new state pages are created -->
+        </div>
+    </main>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+</body>
+</html> 
