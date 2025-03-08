@@ -13,45 +13,81 @@
     <div id="navigation"></div>
 
     <main class="flex-grow container mx-auto px-4 py-8">
-        <h1 class="text-4xl font-bold text-center mb-12 text-gray-800">Browse Restaurants by State</h1>
-        
+        <h1 class="text-4xl font-bold text-center mb-12 text-gray-800">Browse by State</h1>
+        <p class="text-center text-gray-600 mb-8">Explore the best of each state through our curated list of attractions, restaurants, and more.</p>
+
+        <!-- State Dropdown Navigation -->
+        <div class="max-w-xs mx-auto mb-12">
+            <select id="stateSelect" class="w-full p-3 border border-gray-300 rounded-lg bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                <option value="">Select a State</option>
+                <option value="/states/california/california.html">California</option>
+                <option value="/states/florida/florida.html">Florida</option>
+                <option value="/states/maine/maine.html">Maine</option>
+                <option value="/states/new-jersey/new-jersey.html">New Jersey</option>
+                <option value="/states/new-york/new-york.html">New York</option>
+                <option value="/states/texas/texas.html">Texas</option>
+            </select>
+        </div>
+
+        <script>
+            document.getElementById('stateSelect').addEventListener('change', function() {
+                if (this.value) {
+                    window.location.href = this.value;
+                }
+            });
+        </script>
+
         <div class="states-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <div class="state-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <a href="/states/california/california.html" class="block p-6 text-center">
-                    <img src="../assets/images/states/california.svg" alt="California Shape" class="w-16 h-16 mx-auto mb-4">
+                    <img src="images/california-shape.jpg" alt="California Shape" class="w-16 h-16 mx-auto mb-4">
                     <h2 class="text-2xl font-semibold text-gray-800 mb-2">California</h2>
-                    <p class="text-gray-600">Explore restaurants in California</p>
+                    <p class="text-gray-600">Explore California</p>
+                </a>
+            </div>
+
+            <div class="state-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <a href="/states/florida/florida.html" class="block p-6 text-center">
+                    <img src="images/florida-shape.jpg" alt="Florida Shape" class="w-16 h-16 mx-auto mb-4">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Florida</h2>
+                    <p class="text-gray-600">Explore Florida</p>
+                </a>
+            </div>
+
+            <div class="state-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <a href="/states/maine/maine.html" class="block p-6 text-center">
+                    <img src="images/maine-shape.jpg" alt="Maine Shape" class="w-16 h-16 mx-auto mb-4">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Maine</h2>
+                    <p class="text-gray-600">Explore Maine</p>
                 </a>
             </div>
             
 
             <div class="state-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <a href="maine.html" class="block p-6">
-                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Maine</h2>
-                    <p class="text-gray-600">Explore restaurants in Maine</p>
-                </a>
-            </div>
-
-            <div class="state-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <a href="/states/new-jersey/new-jersey.html" class="block p-6">
+                <a href="/states/new-jersey/new-jersey.html" class="block p-6 text-center">
+                    <img src="images/new-jersey-shape.jpg" alt="New Jersey Shape" class="w-16 h-16 mx-auto mb-4">
                     <h2 class="text-2xl font-semibold text-gray-800 mb-2">New Jersey</h2>
-                    <p class="text-gray-600">Explore restaurants in New Jersey</p>
+                    <p class="text-gray-600">Explore New Jersey</p>
                 </a>
             </div>
 
             <div class="state-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <a href="/states/new-york/new-york.html" class="block p-6">
+                <a href="/states/new-york/new-york.html" class="block p-6 text-center">
+                    <img src="images/new-york-shape.jpg" alt="New York Shape" class="w-16 h-16 mx-auto mb-4">
                     <h2 class="text-2xl font-semibold text-gray-800 mb-2">New York</h2>
-                    <p class="text-gray-600">Explore restaurants in New York</p>
+                    <p class="text-gray-600">Explore New York</p>
                 </a>
             </div>
 
             <div class="state-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <a href="/states/texas/texas.html" class="block p-6">
+                <a href="/states/texas/texas.html" class="block p-6 text-center">
+                    <img src="images/texas-shape.jpg" alt="Texas Shape" class="w-16 h-16 mx-auto mb-4">
                     <h2 class="text-2xl font-semibold text-gray-800 mb-2">Texas</h2>
-                    <p class="text-gray-600">Explore restaurants in Texas</p>
+                    <p class="text-gray-600">Explore Texas</p>
                 </a>
             </div>
+
+            
 
             <!-- Add more state cards as new state pages are created -->
         </div>
