@@ -43,7 +43,28 @@ class ComponentLoader {
     }
 }
 
+function adjustHeaderPaths() {
+    const currentPath = window.location.pathname;
+    const depth = currentPath.split('/').filter(Boolean).length;
+    
+    // Calculate the relative path prefix based on depth
+    const prefix = depth === 0 ? '.' : '../'.repeat(depth);
+    
+    // Update all navigation links
+    const header = document.querySelector('.site-header');
+    const links = header.querySelectorAll('a');
+    
+    links.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href.startsWith('/')) {
+            // Remove the leading slash and add the appropriate prefix
+            link.href = prefix + href.substring(1);
+        }
+    });
+}
+
 // Load all components when the DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     ComponentLoader.loadAllComponents();
+    adjustHeaderPaths();
 }); 
